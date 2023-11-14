@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Währungs-Rechner</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
+    <!--<link rel="shortcut icon" href="assets/website-icon-calculator.png" type="image/x-icon">-->
+</head>
+<body>
+<form action="" name="wr">
+    <label for="euroAmount">
+        Eurobetrag: <input id="euroAmount" name="euroAmount" type="number">
+    </label> <br>
+    <label>
+        Zielwährung:
+        <select name="currency">
+            <option value="usd">USD</option>
+            <option value="gbp">GBP</option>
+            <option value="chf">CHF</option>
+            <option value="jpy">JPY</option>
+        </select>
+    </label>
+    <input onclick="convertIF()" type="button" value="Berechnen IF">
+    <input onclick="convertSWITCH()" type="button" value="Berechnen SWITCH">
+    <br>
+    Zielbetrag: <label for="targetAmount"><input id="targetAmount" name="targetAmount" readonly type="text"></label>
+</form>
+</body>
+</html>
